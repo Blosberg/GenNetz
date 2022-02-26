@@ -23,7 +23,7 @@ Other datasets, however, come in the form of Epigenetics, for example:
 Ultimately the goal is to infer weights connecting genes, but with an explainable mechanism that accounts for the intermediate effects of, e.g., epigenetic changes and chromatin structure. 
 I haven't seen a model yet that incorporates this kind of multi-dimensional gene modelling. RNNs would then capture the influence of transcription factor prodcution, methylation, epigenetic changes, and various time-lagged effects of transcription and RNA degradation for each gene.
 
-Admittedly, I haven't yet done an exhaustive literature review on this yet, and am merely suggesting a potential project of curiosity (my current work deals with processing genomics data with much more conventional approaches), but if anyone out there is interested in this type of work, perhaps I'll come back to this and update this later if time allows.
+Admittedly, I haven't yet done an exhaustive literature review on this, and am merely suggesting a potential project of curiosity (my current work deals with processing genomics data with much more conventional approaches), but if anyone out there is interested in this type of work, perhaps I'll come back to this and update this later if time allows.
 
 
 ## Previous Work.
