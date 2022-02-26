@@ -6,7 +6,7 @@ Final project for the Building AI course
 
 The human genome comprises roughly 30,000 genes representing an immensely complex, dynamic, and self-regulating system. 
 
-Mapping the network of dependencies in this network is a massive ongoing challenge. For example, gene A may produce a protein that increases the expression of gene B, which, in turn, produces a protein the represses gene C _and_ gene A, and so on. Some of these dependencies are well-established and known, while many more involve indirect influences, cascading networks, and complicated logic (e.g. gene X1 can repress gene Y, but only in combination with gene Z, however X2 can substitute for X1, etc. etc.) --this is a combinatorial explosion of influences that lends itself naturally to an AI-based network approach.
+Mapping the network of dependencies in this network is a massive ongoing challenge. For example, gene A may produce a protein that increases the expression of gene B, which, in turn, produces a protein the represses gene C _and_ gene A, and so on. Some of these dependencies are well-established and known, while many more involve indirect influences, cascading networks, and complicated logic (e.g. gene X1 can repress gene Y, but only in combination with gene Z, however X2 can substitute for X1, etc. etc.) --this is a combinatorial explosion of influences that lends itself naturally to an AI-based network.
 
 ## Background
 
