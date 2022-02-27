@@ -34,5 +34,5 @@ It would be interesting to incorporate these sorts of additional features into a
 
 ## Previous Work.
 See also:
-* [Zhao et al(2019)](https://shinlab.uconn.edu/wp-content/uploads/sites/2045/2020/01/bibmManuscript2019.pdf)
-* [Mandal (2017) ](https://pubmed.ncbi.nlm.nih.gov/28659000/)
+* [Zhao et al (2019)](https://shinlab.uconn.edu/wp-content/uploads/sites/2045/2020/01/bibmManuscript2019.pdf)
+* [Mandal et al (2017) ](https://www.worldscientific.com/doi/10.1142/S0219720017500160?url_ver=Z39.88-2003&rfr_id=ori:rid:crossref.org&rfr_dat=cr_pub%20%200pubmed)
