@@ -23,7 +23,8 @@ In reality, however, there are intermediates between these effects that can also
   ... among others.
 
 An illustrative sketch is provided by [Jaenisch and Bird (2003)](https://www.nature.com/articles/ng1089z)
-<img src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fng1089/MediaObjects/41588_2003_Article_BFng1089z_Fig1_HTML.gif" width="300">
+
+<img src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fng1089/MediaObjects/41588_2003_Article_BFng1089z_Fig1_HTML.gif" width="500">
 
 Ultimately the goal is to infer weights connecting genes to flesh out the network between genes, but with an explainable mechanism that accounts for the intermediate effects of, e.g., epigenetic changes and chromatin structure. 
 I haven't seen a model yet that incorporates this kind of multi-dimensional gene modelling. RNNs would then capture the influence of transcription factor prodcution, methylation, epigenetic changes, and various time-lagged effects of transcription and RNA degradation for each gene.
