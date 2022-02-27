@@ -6,21 +6,22 @@ Building AI course project
 
 The human genome comprises roughly 30,000 genes representing an immensely complex, dynamic, and self-regulating system. 
 
-Mapping the network of dependencies in this network is a massive ongoing challenge. For example, gene A may produce a protein that increases the expression of gene B, which, in turn, produces a protein the represses gene C _and_ gene A, and so on. Some of these dependencies are well-established and known, while many more involve indirect influences, cascading networks, and complicated logic (e.g. gene X1 can repress gene Y, but only in combination with gene Z, however X2 can substitute for X1, etc. etc.) --this is a combinatorial explosion of influences that lends itself naturally to an AI-based network.
+Mapping the network of dependencies in this network is a massive ongoing challenge. For example, gene A may produce a protein that increases the expression of gene B, which, in turn, produces a protein the represses gene C _and_ gene A, and so on. Some of these dependencies are well-established and known, while many more involve indirect influences, cascading networks, and complicated logic (e.g. gene X1 can repress gene Y, but only in combination with gene Z, however X2 can substitute for X1, etc. etc.) --the combinatorial explosion of influences presents challenges to scientists and experimentalists, but lends itself naturally to an AI-based network.
 
 ## Background
 
-A popular approach is to treat nodes in a recurrent neural network as representing genes rather than neurons --their connecting weights represent their influence (either via promotion or inhibition). Validation can be done via knock-out experiments, lineage tracing, and looking at stable fixed-points of known cell types.  
+A popular approach is to treat nodes in a recurrent neural network as representing genes rather than neurons --their connecting weights represent their influence (either via promotion or inhibition), in addition to cues from the environment and neighbouring cells. Validation can be done via knock-out experiments, lineage tracing, and looking at stable fixed-points of known cell types. 
+While many genes --often referred to as "housekeeping genes"-- are insensitive to the state of the system (and are consistently expressed with low variance independent of cell state), there is enormous medical and biological interest in determining which genes provide critical regulation in steering cell behaviour \-- that is to say, which nodes in such a network have the greatest weights and what the geometry of such a graph of connections looks like. If we know that, then we know what genes to target for therapy for various illnesses.
 
-Generally, however, the networks that I have seen of this type employ a single-dimensional approach. That is, they have an array of values for, say, RNA transcription --the model weight for A->B then reflects the influence from the transcription of A onto the trancription of B. 
+Generally, however, the networks that I have seen of this type employ a single-dimensional approach. That is, they have an array of values for, say, RNA transcription \--hence, the model weight for A->B reflects the _direct_ influence from the transcription of A onto the trancription of B. 
 
-Other datasets, however, come in the form of Epigenetics, for example:
+In reality, however, there are intermediates between these effects that can also be measured from epigenetics analysis, for example:
   * Methylation (BSseq)
   * Transcription Factor binding (ChIPseq)
   * Dynamic TAD boundaries containing Enhancers with corresponding binding motifs,
-    etc.
+  ... among others.
 
-Ultimately the goal is to infer weights connecting genes, but with an explainable mechanism that accounts for the intermediate effects of, e.g., epigenetic changes and chromatin structure. 
+Ultimately the goal is to infer weights connecting genes to flesh out the network, but with an explainable mechanism that accounts for the intermediate effects of, e.g., epigenetic changes and chromatin structure. 
 I haven't seen a model yet that incorporates this kind of multi-dimensional gene modelling. RNNs would then capture the influence of transcription factor prodcution, methylation, epigenetic changes, and various time-lagged effects of transcription and RNA degradation for each gene.
 
 Admittedly, I haven't yet done an exhaustive literature review on this, and am merely suggesting a potential project of curiosity (my current work deals with processing genomics data with much more conventional approaches), but if anyone out there is interested in this type of work, perhaps I'll come back to this and update this later if time allows.
