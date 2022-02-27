@@ -16,17 +16,22 @@ While many genes --often referred to as "housekeeping genes"-- are insensitive t
 Generally, however, the networks that I have seen of this type employ a single-dimensional approach. That is, they have an array of values for, say, RNA transcription \--hence, the model weight for A->B reflects the _direct_ influence from the transcription of A onto the trancription of B. 
 
 In reality, however, there are intermediates between these effects that can also be measured from epigenetics analysis, for example:
-  * Methylation (BSseq)
-  * Transcription Factor binding (ChIPseq)
+  * Cytosine methylation
+  * Acetylation and tri-methylation of histone tails
+  * Transcription Factor binding
   * Dynamic TAD boundaries containing Enhancers with corresponding binding motifs,
   ... among others.
 
-Ultimately the goal is to infer weights connecting genes to flesh out the network, but with an explainable mechanism that accounts for the intermediate effects of, e.g., epigenetic changes and chromatin structure. 
+An illustrative sketch is provided by [Jaenisch and Bird (2003)](https://www.nature.com/articles/ng1089z)
+<img src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fng1089/MediaObjects/41588_2003_Article_BFng1089z_Fig1_HTML.gif" width="300">
+
+Ultimately the goal is to infer weights connecting genes to flesh out the network between genes, but with an explainable mechanism that accounts for the intermediate effects of, e.g., epigenetic changes and chromatin structure. 
 I haven't seen a model yet that incorporates this kind of multi-dimensional gene modelling. RNNs would then capture the influence of transcription factor prodcution, methylation, epigenetic changes, and various time-lagged effects of transcription and RNA degradation for each gene.
 
-Admittedly, I haven't yet done an exhaustive literature review on this, and am merely suggesting a potential project of curiosity (my current work deals with processing genomics data with much more conventional approaches), but if anyone out there is interested in this type of work, perhaps I'll come back to this and update this later if time allows.
+It would be interesting to incorporate these sorts of additional features into an RNN and if anyone out there is interested in this type of work, perhaps I'll come back to this and update with more detail (I have limited time to put into this at the moment, but it is something I'm curious about).
 
 
 ## Previous Work.
+See also:
 * [Zhao et al(2019)](https://shinlab.uconn.edu/wp-content/uploads/sites/2045/2020/01/bibmManuscript2019.pdf)
 * [Mandal (2017) ](https://pubmed.ncbi.nlm.nih.gov/28659000/)
